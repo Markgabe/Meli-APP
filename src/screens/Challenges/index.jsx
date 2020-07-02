@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Container, Separator } from './styles'
+import { Container, Separator, Row } from './styles'
 
 import { Forward30 } from 'styled-icons/material-rounded'
 import { LockAlt, LockOpenAlt } from 'styled-icons/boxicons-solid'
@@ -10,10 +10,13 @@ import Challenge from '../../components/Challenge'
 function Challenges() {
  	return (
     	<Container>
-			<Challenge icon={ Forward30 }/>
-			<Separator />
-			<Challenge icon={ LockOpenAlt }/>
-			<Challenge icon={ LockAlt }/>
+			<Row>
+				<Challenge icon={ Forward30 }/>
+			</Row>
+			<Row>
+				<Challenge icon={ LockOpenAlt }/>
+				<Challenge icon={ LockAlt }/>
+			</Row>
 		</Container>
 	)
 }
