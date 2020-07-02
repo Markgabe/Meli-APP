@@ -1,5 +1,13 @@
 :root {
-  --primary: rgb(0, 0, 0);
+  --primary: #121512;
+  --secondary: #141914;
+  /*--primary: #FFFFFF;
+  --secondary: #DDDDDD;*/
+  --coin: #ddc84d;
+  --rank: #EF4649;
+  --button: #999999;
+  --hoverbutton: #EF4649;
+  --lowchallenge: #3FB554;
 }
 
 body {
