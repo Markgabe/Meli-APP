@@ -32,5 +32,5 @@ export const Icon = styled(({ svg, ...props }) => svg.render(props))`
     width: 65px;
     height: 65px;
 
-    color: var(--primary);
+    color: ${props => props.theme.primary};
 `

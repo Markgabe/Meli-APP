@@ -9,7 +9,7 @@ export const Container = styled.div`
     height: 140px;
     border-top: 1px solid grey;
 
-    background-color: var(--secondary);
+    background-color: ${props => props.theme.secondary};
 
 `
 export const Separator = styled.div`

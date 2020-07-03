@@ -6,7 +6,9 @@ export const Container = styled.div`
     flex-direction: column;
 
     height: 100%;
-    background-color: var(--primary);
+    background-color: ${props => props.theme.primary};
+
+    padding-top: 60px;
 `
 
 export const Separator = styled.div`
