@@ -1,16 +1,16 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import usePersistedState from './utils/usePersistedState'
+import usePersistedState from './utils/usePersistedState';
 
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyles } from './styles/GlobalStyles';
 import { light } from './styles/themes/light';
 import { dark } from './styles/themes/dark';
 
-import Header from './components/Header'
-import Challenges from './screens/Challenges'
-import Menu from './components/Menu'
+import Header from './components/Header';
+import Challenges from './screens/Challenges';
+import Menu from './components/Menu';
 
 const App = () => {
 	const [theme, setTheme] = usePersistedState('light');
@@ -19,17 +19,24 @@ const App = () => {
 	};
 
 	const Container = styled.div`
-		display: flex;
-		flex-direction: column;
-
+		display: grid;
 		height: 100vh;
-	`
+		width: 100vw;
+
+		grid-template-areas:
+			'Header'
+			'Screen'
+			'Menu';
+
+		grid-template-rows: 1fr 8fr 2fr;
+		grid-template-columns: 1fr;
+	`;
 
 	return (
 		<ThemeProvider theme={theme === 'dark' ? light : dark}>
 			<Container>
 				<GlobalStyles />
-				<Header themeToggler={themeToggler}/>
+				<Header themeToggler={themeToggler} />
 				<Challenges />
 				<Menu />
 			</Container>

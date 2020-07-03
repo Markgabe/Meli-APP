@@ -1,23 +1,16 @@
-import styled from 'styled-components'
-
+import styled from 'styled-components';
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 
-    height: 100%;
-    background-color: ${props => props.theme.primary};
+	grid-area: Screen;
 
-    padding-top: 60px;
-`
-
-export const Separator = styled.div`
-    width: 400px;
-    height: 10px;
-`
+	background-color: ${(props) => props.theme.primary};
+`;
 
 export const Row = styled.div`
-    display: flex;
+	display: flex;
 
-    width: 100%;
-`
+	width: 100%;
+`;

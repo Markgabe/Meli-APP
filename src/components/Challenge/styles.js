@@ -1,36 +1,32 @@
-import styled from 'styled-components'
-
+import styled from 'styled-components';
 
 export const Container = styled.div`
-    margin: 20px auto;
+	margin: 20px auto;
 
-    display: flex;
+	display: flex;
 
-    width: 105px;
-    height: 105px;
+	width: 120px;
+	height: 120px;
 
-    border: 7px solid var(--lowchallenge);
-    border-radius: 50%;
-`
+	justify-content: center;
+`;
 
 export const Core = styled.div`
-    display: flex;
+	display: flex;
 
-    width: 90px;
-    height: 90px;
+	width: 90px;
+	height: 90px;
 
-    margin: auto;
+	border-radius: 50%;
 
-    border-radius: 50%;
-
-    background-color: var(--lowchallenge);
-`
+	background-color: ${(props) => props.theme.challengeCore};
+`;
 
 export const Icon = styled(({ svg, ...props }) => svg.render(props))`
-    margin: auto;
+	margin: auto;
 
-    width: 65px;
-    height: 65px;
+	width: 65px;
+	height: 65px;
 
-    color: ${props => props.theme.primary};
-`
+	color: ${(props) => props.theme.challengeIcon};
+`;

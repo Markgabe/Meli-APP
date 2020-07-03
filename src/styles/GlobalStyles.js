@@ -7,7 +7,13 @@ export const GlobalStyles = createGlobalStyle`
         --rank: #EF4649;
         --button: #999999;
         --hoverbutton: #EF4649;
-        --lowchallenge: #3FB554;
+        /*--lowchallenge: #3FB554;*/
+        --lowchallenge: #F79236;
+        --challengeicon: #0090CD;
+    }
+
+    * {
+        overflow: hidden;
     }
 
     body {
