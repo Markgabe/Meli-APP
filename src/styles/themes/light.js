@@ -1,10 +1,10 @@
 export const light = {
 	title: 'light',
-	primary: '#FFFFFF',
+	primary: '#6200EE',
 	secondary: '#DDDDDD',
 	text: '#000000',
 	button: '#BBB',
-	challengeIcon: '#3483fa',
-	challengeBorder: '#3483fa',
-	challengeCore: '#F79236',
+	challengeIcon: '#222',
+	challengeBorder: '#222',
+	challengeCore: '#03DAC6',
 };

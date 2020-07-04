@@ -28,7 +28,7 @@ const App = () => {
 			'Screen'
 			'Menu';
 
-		grid-template-rows: 1fr 8fr 2fr;
+		grid-template-rows: 60px auto 100px;
 		grid-template-columns: 1fr;
 	`;
 
