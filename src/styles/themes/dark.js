@@ -7,4 +7,5 @@ export const dark = {
 	challengeIcon: '#EF4649',
 	challengeBorder: '#EF4649',
 	challengeCore: 'turquoise',
+	modal: 'transparent',
 };

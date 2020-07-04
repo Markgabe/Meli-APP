@@ -4,7 +4,9 @@ export const light = {
 	secondary: '#DDDDDD',
 	text: '#000000',
 	button: '#BBB',
-	challengeIcon: '#222',
-	challengeBorder: '#222',
+	challengeIcon: '#6200EE',
+	challengeBorder: '#BBB',
+	challengeDesktopBorder: 'gold',
 	challengeCore: '#03DAC6',
+	modal: '#FFFFFFAA',
 };

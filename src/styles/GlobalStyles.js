@@ -19,19 +19,11 @@ export const GlobalStyles = createGlobalStyle`
     body {
         background: ${({ theme }) => theme.primary};
         color: ${({ theme }) => theme.text};
-        font-family: Tahoma, Helvetica, Arial, Roboto, sans-serif;
+        font-family: 'Ubuntu', sans-serif;
         transition: all 0.2s;
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-            'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-            sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-    }
-
-    code {
-        font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-            monospace;
     }
 
 `;

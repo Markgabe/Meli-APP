@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-	margin: 20px auto;
+	margin: 20px 0;
 
 	display: flex;
 
@@ -9,6 +9,12 @@ export const Container = styled.div`
 	height: 120px;
 
 	justify-content: center;
+
+	@media (min-width: 768px) {
+		path.CircularProgressbar-path {
+			stroke: ${(props) => props.theme.challengeDesktopBorder} !important;
+		}
+	}
 `;
 
 export const Core = styled.div`
