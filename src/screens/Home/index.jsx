@@ -1,18 +1,21 @@
-import React from 'react'
+import React from 'react';
 
-import { Container, Menu } from './styles'
+import { Container } from './styles';
 
-import Header from '../../components/Header'
-import Challenges from '../Challenges'
+import Header from '../../components/Header';
+import SubHeader from '../../components/SubHeader';
+import Challenges from '../Challenges';
+import Menu from '../../components/Menu';
 
-function Home() {
-  return (
-    <Container>
-        <Header />
-        <Challenges />
-        <Menu />
-    </Container>
-  )
+function Home({ toggle }) {
+	return (
+		<Container>
+			<Header themeToggler={toggle} />
+			<SubHeader />
+			<Challenges />
+			<Menu />
+		</Container>
+	);
 }
 
-export default Home
+export default Home;

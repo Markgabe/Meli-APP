@@ -13,13 +13,17 @@ export const Container = styled.div`
 		justify-content: space-between;
 		padding: 30px 150px;
 	}
+
+	overflow-y: scroll;
 `;
 
 export const ChallengeSection = styled.div`
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
+	height: 500px;
 
-	border-radius: 2%;
+	border-radius: 6px;
 	background: transparent;
 	width: 70%;
 
@@ -46,6 +50,8 @@ export const Row = styled.div`
 	display: flex;
 
 	justify-content: space-evenly;
+
+	overflow: hidden;
 
 	width: 100%;
 `;
@@ -78,5 +84,5 @@ export const RankHeaderSymbol = styled(InfoCircle)`
 	align-self: flex-end;
 	margin: 0 0 2px 5px;
 
-	color: ${(props) => props.theme.button};
+	color: ${(props) => props.theme.toolTip};
 `;

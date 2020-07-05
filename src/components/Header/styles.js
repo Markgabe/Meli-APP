@@ -4,13 +4,14 @@ import styled from 'styled-components';
 
 import { Bitcoin } from 'styled-icons/boxicons-logos';
 import { Trophy } from 'styled-icons/boxicons-solid';
+import { Menu as MenuOutline } from 'styled-icons/feather';
 
 export const Container = styled.div`
 	display: flex;
 
 	align-items: space-between;
 
-	background-color: ${(props) => props.theme.secondary};
+	background-color: ${(props) => props.theme.headerBackground};
 
 	border-bottom: 1px solid grey;
 
@@ -37,7 +38,13 @@ export const Rank = styled(Trophy)`
 	color: var(--rank);
 	width: 24px;
 	height: 24px;
+	margin: auto 2px auto auto;
+`;
 
+export const Menu = styled(MenuOutline)`
+	color: var(--white);
+	width: 30px;
+	height: 30px;
 	margin: auto 2px auto auto;
 `;
 
@@ -45,11 +52,4 @@ export const RankNumber = styled.p`
 	color: var(--rank);
 	font-weight: bold;
 	margin-right: 20px;
-`;
-
-export const SwitchContainer = styled.div`
-	margin: 0;
-	padding: 0;
-	display: flex;
-	align-items: center;
 `;

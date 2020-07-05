@@ -1,36 +1,20 @@
-import React, { useContext } from 'react';
-import { ThemeContext } from 'styled-components'
+import React from 'react';
 
-import Switch from "react-switch";
-
-import { Container, Coin, Amount, Rank, RankNumber, SwitchContainer } from './styles';
+import { Container, Menu } from './styles';
 import Logo from '../Logo';
+import SearchBar from '../SearchBar';
 
-import LogoSVG from '../../assets/melijuntos.svg';
+import ThemeSwitch from '../ThemeSwitch';
+
+import LogoSVG from '../../assets/meliamarelo.svg';
 
 function Header({ themeToggler }) {
-	const context = useContext(ThemeContext)
-
 	return (
 		<Container>
 			<Logo svg={LogoSVG} />
-			<Rank />
-			<RankNumber>#2135</RankNumber>
-			<Coin />
-			<Amount>1304</Amount>
-			<SwitchContainer>
-				<Switch
-					onChange={themeToggler} 
-					checked={context.title === 'dark'} 
-					checkedIcon={false}
-					uncheckedIcon={false}
-					height={10}
-					width={40}
-					handleDiameter={20}
-					onColor={context.button}
-					offHandleColor={'#333'}
-				/>
-			</SwitchContainer>
+			<SearchBar />
+			<Menu />
+			<ThemeSwitch toggler={themeToggler} />
 		</Container>
 	);
 }

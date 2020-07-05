@@ -9,4 +9,6 @@ export const light = {
 	challengeDesktopBorder: 'gold',
 	challengeCore: '#03DAC6',
 	modal: '#FFFFFFAA',
+	headerBackground: '#FFF159',
+	toolTip: '#000',
 };

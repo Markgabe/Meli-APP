@@ -1,16 +1,18 @@
-import React from 'react';
-import styled from 'styled-components';
+import React, { useEffect } from 'react';
 
-import usePersistedState from './utils/usePersistedState';
-
-import { ThemeProvider } from 'styled-components';
+import { BrowserRouter, Route } from 'react-router-dom';
 import { GlobalStyles } from './styles/GlobalStyles';
+
 import { light } from './styles/themes/light';
 import { dark } from './styles/themes/dark';
 
+import { ThemeProvider } from 'styled-components';
+
+import usePersistedState from './utils/usePersistedState';
+
 import Header from './components/Header';
-import Challenges from './screens/Challenges';
-import Menu from './components/Menu';
+
+import Home from './screens/Home';
 
 const App = () => {
 	const [theme, setTheme] = usePersistedState('light');
@@ -18,28 +20,20 @@ const App = () => {
 		theme === 'light' ? setTheme('dark') : setTheme('light');
 	};
 
-	const Container = styled.div`
-		display: grid;
-		height: 100vh;
-		width: 100vw;
-
-		grid-template-areas:
-			'Header'
-			'Screen'
-			'Menu';
-
-		grid-template-rows: 60px auto 100px;
-		grid-template-columns: 1fr;
-	`;
-
 	return (
-		<ThemeProvider theme={theme === 'dark' ? light : dark}>
-			<Container>
-				<GlobalStyles />
-				<Header themeToggler={themeToggler} />
-				<Challenges />
-				<Menu />
-			</Container>
+		<ThemeProvider theme={theme === 'light' ? light : dark}>
+			<GlobalStyles />
+			<BrowserRouter>
+				<Route
+					exact
+					path="/"
+					component={() => <Home toggle={themeToggler} />}
+				/>
+				<Route
+					path="/header"
+					component={() => <Header themeToggler={themeToggler} />}
+				/>
+			</BrowserRouter>
 		</ThemeProvider>
 	);
 };

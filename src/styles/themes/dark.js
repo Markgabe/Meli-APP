@@ -8,4 +8,6 @@ export const dark = {
 	challengeBorder: '#EF4649',
 	challengeCore: 'turquoise',
 	modal: 'transparent',
+	headerBackground: '#141914',
+	toolTip: '#999999',
 };
