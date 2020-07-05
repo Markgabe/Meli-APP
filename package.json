@@ -8,16 +8,21 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
+    "polished": "^3.6.5",
     "react": "^16.13.1",
     "react-circular-progressbar": "^2.0.3",
     "react-dom": "^16.13.1",
+    "react-hamburger-menu": "^1.2.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-switch": "^5.0.1",
+    "reactjs-popup": "^1.5.0",
     "styled-components": "^5.1.1",
     "styled-icons": "^10.5.0"
   },
   "scripts": {
-    "start": "PORT=80 react-scripts start",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -38,3 +43,4 @@
     ]
   }
 }
+>>>>>>> 29bcc9bff03d09fd5f30cb155de89313f7da1c11

@@ -13,7 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     * {
-        overflow: hidden;
+        overflow-x: hidden;
     }
 
     body {

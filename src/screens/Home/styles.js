@@ -1,21 +1,16 @@
-import styled from 'styled-components'
-
-import HeaderComponent from '../../components/Header'
-import ChallengesScreen from '../Challenges'
-import MenuComponent from '../../components/Menu'
+import styled from 'styled-components';
 
 export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
+	display: grid;
+	height: 100vh;
+	width: 100vw;
 
-    height: 100vh;
-`
+	grid-template-areas:
+		'Header'
+		'SubHeader'
+		'Screen'
+		'Menu';
 
-export const Menu = styled(MenuComponent)`
-`
-
-export const Header = styled(HeaderComponent)`
-`
-
-export const Challenge = styled(ChallengesScreen)`
-`
+	grid-template-rows: 60px 50px auto 100px;
+	grid-template-columns: 1fr;
+`;
