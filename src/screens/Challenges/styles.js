@@ -6,6 +6,8 @@ export const Container = styled.div`
 	display: flex;
 	grid-area: Screen;
 
+	background: ${(props) => props.theme.primary};
+
 	justify-content: center;
 	padding: 10px 10px;
 

@@ -10,7 +10,7 @@ export const Container = styled.div`
 
 	background-color: ${(props) => props.theme.headerBackground};
 
-	border-bottom: 1px solid grey;
+	border-bottom: 1px solid ${(props) => props.theme.separator};
 
 	grid-area: SubHeader;
 

@@ -7,17 +7,8 @@ export const Container = styled.div`
 
 	grid-template-areas:
 		'Header'
-		'SubHeader'
 		'Screen';
 
-	grid-template-rows: 60px 50px auto;
+	grid-template-rows: 60px auto;
 	grid-template-columns: 1fr;
-`;
-
-export const Screen = styled.div`
-	grid-area: Screen;
-
-	img {
-		width: 375px;
-	}
 `;

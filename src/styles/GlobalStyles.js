@@ -16,7 +16,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-        background: ${({ theme }) => theme.primary};
+        background: ${({ theme }) => theme.mainBg};
         color: ${({ theme }) => theme.text};
         font-family: 'Ubuntu', sans-serif;
         transition: all 0.2s;

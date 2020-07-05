@@ -13,4 +13,9 @@ export const light = {
 	toolTip: '#000',
 	hamburger: '#000',
 	searchBar: '#fff',
+	separator: '#AAAAAAAA',
+	optionRow: '#f7f7f7',
+	smallIcon: '#333',
+	mainBg: '#fff',
+	storeButton: '#FFF159',
 };

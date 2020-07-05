@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { ThemeContext } from 'styled-components';
+import { Link } from 'react-router-dom';
 
 import { Container, HamburgerMenu, MainContainer, MenuArea } from './styles';
 import Logo from '../Logo';
@@ -23,7 +24,12 @@ function Header({ themeToggler }) {
 	return (
 		<MainContainer>
 			<Container>
-				<Logo svg={LogoSVG} />
+				<Link
+					to="/"
+					style={{ textDecoration: 'none', display: 'flex' }}
+				>
+					<Logo svg={LogoSVG} />
+				</Link>
 				<SearchBar />
 				<HamburgerMenu
 					element={Hamburger}

@@ -10,9 +10,9 @@ import { ThemeProvider } from 'styled-components';
 
 import usePersistedState from './utils/usePersistedState';
 
-import Header from './components/Header';
-
 import Home from './screens/Home';
+import MercadoJuntosHome from './screens/MercadoJuntosHome';
+import Store from './screens/Store';
 
 const App = () => {
 	const [theme, setTheme] = usePersistedState('light');
@@ -30,8 +30,16 @@ const App = () => {
 					component={() => <Home toggle={themeToggler} />}
 				/>
 				<Route
-					path="/header"
-					component={() => <Header themeToggler={themeToggler} />}
+					exact
+					path="/mercadojuntos"
+					component={() => (
+						<MercadoJuntosHome toggle={themeToggler} />
+					)}
+				/>
+				<Route
+					exact
+					path="/mercadojuntos/store"
+					component={() => <Store toggle={themeToggler} />}
 				/>
 			</BrowserRouter>
 		</ThemeProvider>

@@ -5,9 +5,7 @@ import { SwitchContainer } from './styles';
 import Switch from 'react-switch';
 
 const ThemeSwitch = ({ toggler }) => {
-	console.log(toggler);
 	const context = useContext(ThemeContext);
-	console.log(context);
 	return (
 		<SwitchContainer>
 			<Switch
