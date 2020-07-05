@@ -11,4 +11,6 @@ export const light = {
 	modal: '#FFFFFFAA',
 	headerBackground: '#FFF159',
 	toolTip: '#000',
+	hamburger: '#000',
+	searchBar: '#fff',
 };

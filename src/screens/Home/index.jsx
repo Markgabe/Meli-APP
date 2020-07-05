@@ -13,7 +13,6 @@ function Home({ toggle }) {
 			<Header themeToggler={toggle} />
 			<SubHeader />
 			<Challenges />
-			<Menu />
 		</Container>
 	);
 }

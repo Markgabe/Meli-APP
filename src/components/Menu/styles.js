@@ -8,8 +8,11 @@ export const Container = styled.div`
 	grid-area: Menu;
 
 	border-top: 1px solid grey;
+	border-bottom: 1px solid grey;
 
 	background-color: ${(props) => props.theme.secondary};
+
+	overflow-y: hidden;
 `;
 
 export const Separator = styled.div`

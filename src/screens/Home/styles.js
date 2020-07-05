@@ -8,9 +8,8 @@ export const Container = styled.div`
 	grid-template-areas:
 		'Header'
 		'SubHeader'
-		'Screen'
-		'Menu';
+		'Screen';
 
-	grid-template-rows: 60px 50px auto 100px;
+	grid-template-rows: 60px 50px auto;
 	grid-template-columns: 1fr;
 `;

@@ -10,4 +10,6 @@ export const dark = {
 	modal: 'transparent',
 	headerBackground: '#141914',
 	toolTip: '#999999',
+	hamburger: '#999999',
+	searchBar: '#555',
 };
