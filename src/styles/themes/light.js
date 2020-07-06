@@ -18,4 +18,6 @@ export const light = {
 	smallIcon: '#333',
 	mainBg: '#fff',
 	storeButton: '#FFF159',
+	menuButton: '#2D3277',
+	notText: '#fff',
 };

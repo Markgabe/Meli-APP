@@ -24,9 +24,9 @@ function Loja({ themeToggler }) {
 		<Container>
 			<MeliContainer>
 				<MoedaTop />
-				<TextMoeda>1600 MeliCoins</TextMoeda>
+				<TextMoeda>1600 MeLiCoins</TextMoeda>
 			</MeliContainer>
-			<Titulo>Vantagens com MeliCoins</Titulo>
+			<Titulo>Vantagens com MeLiCoins</Titulo>
 			<Item>
 				<ListTitle>50 embalagens do MeLi</ListTitle>
 				<ListText>

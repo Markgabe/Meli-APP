@@ -1,18 +1,18 @@
-import { React } from 'react'
+import { React } from 'react';
 
-import styled from 'styled-components'
-
+import styled from 'styled-components';
 
 export const ResultIcon = styled(({ svg, ...props }) => svg.render(props))`
-    color: ${props => props.active ? "var(--hoverbutton)": "var(--button)"};
-    width: 60px;
-    height: 60px;
-    margin: 10px auto;
+	color: ${(props) =>
+		props.active ? props.theme.menuButton : 'var(--button)'};
+	width: 60px;
+	height: 60px;
+	margin: 10px auto;
 
-    transition: all 0.3s;
+	transition: all 0.3s;
 
-    &:hover {
-        color: var(--hoverbutton);
-        transform: scale(1.05);
-    }
-`
+	&:hover {
+		color: ${(props) => props.theme.menuButton};
+		transform: scale(1.05);
+	}
+`;

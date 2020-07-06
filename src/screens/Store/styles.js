@@ -7,8 +7,9 @@ export const Container = styled.div`
 
 	grid-template-areas:
 		'Header'
-		'Screen';
+		'Screen'
+		'Menu';
 
-	grid-template-rows: 60px auto;
+	grid-template-rows: 60px auto 100px;
 	grid-template-columns: 1fr;
 `;

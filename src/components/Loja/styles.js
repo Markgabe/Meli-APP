@@ -61,7 +61,7 @@ export const MoedaTop = styled(Coins)`
 	width: 30px;
 	height: 30px;
 	margin-top: 10px;
-	margin-left: 140px;
+	margin-left: 10px;
 	margin-right: 10px;
 `;
 
@@ -76,8 +76,6 @@ export const TextMoeda = styled.p`
 	display: inline;
 	color: ${(props) => props.theme.text};
 	font-weight: bold;
-
-	margin-right: auto;
 `;
 
 export const TextExp = styled.p`

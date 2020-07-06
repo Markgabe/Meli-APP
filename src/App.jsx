@@ -13,6 +13,7 @@ import usePersistedState from './utils/usePersistedState';
 import Home from './screens/Home';
 import MercadoJuntosHome from './screens/MercadoJuntosHome';
 import Store from './screens/Store';
+import Rank from './screens/Rank';
 
 const App = () => {
 	const [theme, setTheme] = usePersistedState('light');
@@ -40,6 +41,11 @@ const App = () => {
 					exact
 					path="/mercadojuntos/store"
 					component={() => <Store toggle={themeToggler} />}
+				/>
+				<Route
+					exact
+					path="/mercadojuntos/rank"
+					component={() => <Rank toggle={themeToggler} />}
 				/>
 			</BrowserRouter>
 		</ThemeProvider>

@@ -18,4 +18,6 @@ export const dark = {
 	smallIcon: '#999',
 	mainBg: '#121512',
 	storeButton: '#999',
+	menuButton: '#ef4649',
+	notText: '#141914',
 };

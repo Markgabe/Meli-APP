@@ -3,17 +3,17 @@ import React from 'react';
 import { Container } from './styles';
 
 import Header from '../../components/HeaderJuntos';
-import Loja from '../../components/Loja';
+import Ranking from '../../components/Ranking';
 import Menu from '../../components/Menu';
 
-function Store({ toggle }) {
+function Rank({ toggle }) {
 	return (
 		<Container>
 			<Header themeToggler={toggle} />
-			<Loja />
-			<Menu act="store" />
+			<Ranking />
+			<Menu act="rank" />
 		</Container>
 	);
 }
 
-export default Store;
+export default Rank;
